@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.grid{
+    display: grid;
+     gap: 25px; 
+      max-width: 1200px;
+      margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title"
+        "header header header"
+        "sidebar content content"
+        "sidebar content content"
+        "sidebar footer footer"
+        "links links links"
+}
+
+/*.title {
+    grid-column-start:1;
+    grid-column-end:3;
+*/
+
+.grid {
+        background-color: #ffffff;
+        border: 3px solid #960f0f;
+}
+
+.title {
+    grid-area: title;
+    background-color: #7a6066;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.header {
+    grid-area: header;
+    background-color: #20c7bc;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #c30733;
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    
+}
+.content {
+    grid-area: content;
+    background-color: #423977;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+}
+.footer {
+    grid-area: footer;
+    background-color: #7a6066;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.links {
+    grid-area: links;
+    background-color: #da00338e;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+   /* border: 3px solid #000000;*/
+}
+
+/*
+.grid div:nth-child(1) {
+    background-color: red;
+}
+    
+.grid div:nth-child(6) {
+    background-color: blue;
+}
+    */

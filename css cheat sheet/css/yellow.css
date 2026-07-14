@@ -1,0 +1,30 @@
+body {
+    background: yellow;
+}body {
+    background: yellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid div {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.grid div:nth-child(even) {
+    background-color: red;
+}
+
+.grid div:nth-child(odd) {
+    background-color: blue;
+}
