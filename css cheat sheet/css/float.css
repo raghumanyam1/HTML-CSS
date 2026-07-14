@@ -7,3 +7,23 @@ div{
     float:left;
     margin:10px;
 }
+
+
+
+
+
+
+body {
+    background: yellow;
+}
+*{
+    margin:0;
+    padding:0;
+}
+ 
+.grid div:nth-child(even) {
+    background-color: red;
+}
+.grid div:nth-child(odd) {
+    background-color: blue;
+}

@@ -1,12 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 10px;
-}
+ <style>
+    /* Base Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.grid div:nth-child(even) {
-    background-color: red;
-}
-.grid div:nth-child(odd) {
-    background-color: blue;
-}
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+
+    /* 1. Grid Container Setup */
+    .grid-container {
+      display: grid;
+      /* Creates 3 columns of equal, flexible width */
+      grid-template-columns: repeat(3, 1fr); 
+      /* Sets a 15px gap between rows and columns */
+      gap: 15px; 
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* 2. Styling for Grid Items */
+    .grid-item {
+      background-color: #3498db;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    /* 3. Advanced Placement Example (Optional) */
+    .featured-item {
+      background-color: #e74c3c;
+      /* Makes this specific item stretch across 2 columns */
+      grid-column: span 2; 
+    }
+  </style>
